@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buzzer Website</title>
+</head>
+<body>
+    <h1>Buzzer</h1>
+
+    <input type="text" id="userInput" placeholder="Type your team name..." />
+    <p id="status"></p>
+    <button onclick="sendButtonClick()" style="width: 500px; height: 500px;">BUZZ!</button>
+    <script>
+        function sendButtonClick() {
+            const inputText = document.getElementById('userInput').value;
+
+            fetch('/button-pressed', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ clicked: true, message: inputText })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('status').innerText = data.message;
+            });
+        }
+    </script>
+</body>
+</html>
+
