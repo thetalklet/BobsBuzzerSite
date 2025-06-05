@@ -13,7 +13,7 @@ curl -L -o "Start Buzzer Site.command" "https://raw.githubusercontent.com/thetal
 "$(dirname "$0")/Start Buzzer Site.command"
 chmod u+x ./"Start Buzzer Site.command"
 if command -v python3 &>/dev/null; then
-    
+    echo "Python 3 is installed!"
 else
     curl -L -o "Python 3.13.4 Installer for Buzzer Site for MacOS" "https://www.python.org/ftp/python/3.13.4/python-3.13.4-macos11.pkg"
     echo "Please double click the file labeled 'Python 3.13.4 Installer for Buzzer Site for MacOS' and follow the instructions to install Python."
