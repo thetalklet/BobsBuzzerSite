@@ -1,4 +1,4 @@
-To download the program run in the "Terminal" MacOS app:
+To download the program paste the following code into the "Terminal" MacOS app:
 
 ```bash
    curl -L -o "Start Buzzer Site.command" "https://raw.githubusercontent.com/thetalklet/BobsBuzzerSite/refs/heads/main/Start%20Buzzer%20Site%20copy.command"
@@ -7,7 +7,7 @@ To download the program run in the "Terminal" MacOS app:
 
 Then, open "Start Buzzer Site.command" and you are good to go!
 
-Alternatively, you can also run these commands to download and run the program immediately!
+Alternatively, you can also run these commands to download and run the program immediately instead!
 
 ```bash
    curl -L -o "Start Buzzer Site.command" "https://raw.githubusercontent.com/thetalklet/BobsBuzzerSite/refs/heads/main/Start%20Buzzer%20Site%20copy.command"
