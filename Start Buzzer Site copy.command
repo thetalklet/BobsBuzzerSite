@@ -9,7 +9,7 @@ curl -L -o index.html "https://raw.githubusercontent.com/thetalklet/BobsBuzzerSi
 cd ..
 cd ..
 mv "Start Buzzer Site.command" .buzzleft.command
-curl -L -o "Start Buzzer Site.command" "https://raw.githubusercontent.com/thetalklet/BobsBuzzerSite/02608ba9dfd6f5c81611122bb0cee8d097cfa0e5/Start%20Buzzer%20Site.command"
+curl -L -o "Start Buzzer Site.command" "https://github.com/thetalklet/BobsBuzzerSite/blob/4b8d78067264936a64935fd4473ca3930e9a1be2/Start%20Buzzer%20Site.command"
 "$(dirname "$0")/Start Buzzer Site.command"
 chmod u+x ./"Start Buzzer Site.command"
 if command -v python3 &>/dev/null; then
