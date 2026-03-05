@@ -1,8 +1,15 @@
 
 #!/bin/bash
-try:
-  cd "$(dirname "$0")/.buzzersitedata"
-except:
+python3 -m venv venv
+source venv/bin/activate
+pip3 install Flask
+pip3 install flask
+python3 app.py
+rm .buzzleft.command
+
+try {
+    cd "$(dirname "$0")/.buzzersitedata"
+} catch '*' {
   mkdir -p .buzzersitedata
   cd ".buzzersitedata"
   curl -L -o app.py "https://raw.githubusercontent.com/thetalklet/BobsBuzzerSite/02608ba9dfd6f5c81611122bb0cee8d097cfa0e5/.buzzersitedata/app.py"
@@ -15,9 +22,3 @@ except:
   curl -L -o "Start Buzzer Site.command" "https://raw.githubusercontent.com/thetalklet/BobsBuzzerSite/02608ba9dfd6f5c81611122bb0cee8d097cfa0e5/Start%20Buzzer%20Site.command"
   "$(dirname "$0")/Start Buzzer Site.command"
   chmod u+x ./"Start Buzzer Site.command"
-python3 -m venv venv
-source venv/bin/activate
-pip3 install Flask
-pip3 install flask
-python3 app.py
-rm .buzzleft.command
